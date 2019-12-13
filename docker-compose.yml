@@ -3,5 +3,11 @@ version: "3.7"
 services:
   database: #database such as mariadb mysql postegres etc.
     build: ./database
+    restart: always
+    ports: "5432:5432"
+    environment:
+      POSTGRES_DB: "laravel"
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "password"
     #  app: #php-cli
     # webserver: #nginx & php-fpm
