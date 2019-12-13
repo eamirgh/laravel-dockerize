@@ -1,7 +1,8 @@
-version: 3.0
+version: "3.7"
 
 services:
   database: #database such as mariadb mysql postegres etc.
     - build: ./database
+    -
   app: #php-cli
   webserver: #nginx & php-fpm

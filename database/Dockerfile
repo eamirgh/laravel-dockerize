@@ -1,1 +1,4 @@
-FROM postgres:11.5-alpine
+FROM postgres:12.1-alpine
+
+LABEL maintainer="contact@amirghaffari.com"
+
